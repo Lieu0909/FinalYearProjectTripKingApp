@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    tools:context=".ui.Blogger.BlogUpdateDetailsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/toolbar_updateBlogDetails"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        app:title="Blog"
+        app:titleMarginStart="10dp"
+        >
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="true"
+        android:orientation="vertical"
+        android:weightSum="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_updateBlogDetails">
+        <ImageView
+            android:id="@+id/u_dest_Pic"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bb_create_blog" />
+
+        <EditText
+            android:id="@+id/u_dest_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Destination Name"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/u_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:hint="Description" />
+        <EditText
+            android:id="@+id/u_budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:hint="Budget" />
+        <Button
+            android:id="@+id/u_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:text="Update"/>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

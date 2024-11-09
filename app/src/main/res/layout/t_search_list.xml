@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    >
+    <ImageView
+        android:id="@+id/t_blogImg"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        app:srcCompat="@drawable/sea_background"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0.5"
+        />
+
+    <TextView
+        android:id="@+id/t_blogName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:textSize="16sp"
+        android:textColor="#555555"
+        android:layout_toEndOf="@+id/t_blogImg"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1.5"/>
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_bottom_navigation"
+    app:startDestination="@+id/navigation_trip">
+    <fragment
+        android:id="@+id/navigation_discover"
+        android:name="com.example.trip.ui.Discover.DiscoverFragment"
+        android:label="Discover"
+        tools:layout="@layout/fragment_discover" />
+
+    <fragment
+        android:id="@+id/navigation_trip"
+        android:name="com.example.trip.ui.MyTrip.TripFragment"
+        android:label="Trip"
+        tools:layout="@layout/fragment_trip" />
+
+    <fragment
+        android:id="@+id/navigation_voting"
+        android:name="com.example.trip.ui.Group.GroupFragment"
+        android:label="Group Chat"
+        tools:layout="@layout/fragment_group" />
+    <fragment
+        android:id="@+id/navigation_blogger"
+        android:name="com.example.trip.ui.Blogger.HomeBlogFragment"
+        android:label="Blogger"
+        tools:layout="@layout/app_bar_content_main" />
+    <fragment
+        android:id="@+id/navigation_more"
+        android:name="com.example.trip.ui.More.MoreFragment"
+        android:label="More"
+        tools:layout="@layout/fragment_more" />
+</navigation>

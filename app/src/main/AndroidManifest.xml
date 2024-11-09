@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trip">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.Discover.DiscoverViewedLayout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".ui.Group.GroupInfoActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.Group.GroupMemberActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ui.Group.MessageChatActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.Blogger.BlogViewPosted"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.MyTrip.TripSchedule"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.MyTrip.TripPlanningMenu" />
+        <activity android:name=".ui.Blogger.BlogUpdateDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ui.Blogger.BlogViewLayout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.Blogger.BlogWriteDetails"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.Blogger.BlogUploadMenu"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Login_Registration.ProfileActivity" />
+        <activity
+            android:name=".Login_Registration.RegistrationPage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Login_Registration.NewUserMain"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Login_Registration.LoginPage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Login_Registration.ForgetPage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

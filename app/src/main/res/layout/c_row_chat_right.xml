@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FF563F"
+    android:layout_marginRight="10dp"
+    android:layout_marginStart="100dp"
+    android:layout_marginTop="10dp"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/showTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:text="Time"
+        android:textAlignment="textEnd"
+        android:textSize="10sp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/showName"
+        android:layout_below="@+id/showTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textStyle="bold"
+        android:text="Name"
+        android:visibility="gone"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/showMessages"
+        android:layout_below="@+id/showName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:text="The messages"
+        android:textColor="@android:color/white" />
+    <!--Voting platform-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/votingLayout"
+        android:orientation="vertical"
+        android:layout_below="@id/showMessages"
+        >
+
+        <TextView
+            android:id="@+id/vv_questionTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+         <TextView
+                    android:id="@+id/vv_option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/vv_questionTv"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/progress_track"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vv_option2"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:layout_below="@+id/vv_option1"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/progress_track"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vv_option3"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:layout_below="@+id/vv_option2"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/progress_track"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vv_option4"
+                    android:layout_margin="5dp"
+                    android:layout_below="@+id/vv_option3"
+                    android:clickable="true"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/progress_track"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:id="@+id/votingOptionLL"
+            android:layout_below="@+id/vv_option4"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:id="@+id/choiceTv"
+                android:text="Choice"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Show1"
+                android:background="@drawable/progress_track"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:hint="0voters"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Show2"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:hint="option"
+                android:layout_margin="5dp"
+                android:background="@drawable/progress_track"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Show3"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/progress_track"
+                android:hint="option"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Show4"
+                android:background="@drawable/progress_track"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:hint="option"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:id="@+id/voting_ll"
+            android:layout_below="@+id/votingOptionLL"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:padding="8dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/one" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/one"
+                    android:id="@+id/oneTv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:hint="0voters"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:padding="8dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/two" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/two"
+                    android:id="@+id/twoTv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:hint="0voters"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:padding="8dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/three" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/three"
+                    android:id="@+id/threeTv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:hint="0voters"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:padding="8dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/four" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/four"
+                    android:id="@+id/fourTv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:hint="0voters"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+

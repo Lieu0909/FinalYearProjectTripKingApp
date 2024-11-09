@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MyTrip.TripPlanningMenu">
+
+    <LinearLayout
+        android:id="@+id/layout_blankTemplate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/top_bottom_line"
+        android:clickable="true"
+        android:weightSum="2.5">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/ic_blanktemplate"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blank Template"
+            android:padding="13dp"
+            android:layout_weight="1.5"
+            android:gravity="left"
+            android:textSize="24sp"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/ic_navigate_next_black_24dp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
